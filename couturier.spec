@@ -12,7 +12,9 @@ BuildRequires:	glade-sharp2
 BuildRequires:	gnome-sharp2-devel
 	
 %description
-Couturier is a PDF merge application for the GNOME Desktop. It allows to merge multiple documents like PDF or images into one single PDF document
+Couturier is a PDF merge application for the GNOME Desktop. 
+It allows to merge multiple documents like PDF or images 
+into one single PDF document
 
 %prep
 %setup -q
@@ -25,19 +27,15 @@ Couturier is a PDF merge application for the GNOME Desktop. It allows to merge m
 rm -rf $RPM_BUILD_ROOT
 %makeinstall_std
 
+%find_lang %name
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files
+%files -f %name.lang
 %defattr(-,root,root)  
-%_bindir/couturier
-%_libdir/couturier/Couturier.Core.dll
-%_libdir/couturier/Couturier.exe
-%_libdir/couturier/itextsharp.dll
-%_libdir/pkgconfig/couturier.core.pc
-%_datadir/applications/couturier.desktop
-%_datadir/icons/couturier.svg
-%_datadir/locale/de/LC_MESSAGES/couturier.mo
-%_datadir/locale/el/LC_MESSAGES/couturier.mo
-%_datadir/locale/fr/LC_MESSAGES/couturier.mo
-%_datadir/locale/it/LC_MESSAGES/couturier.mo
+%_bindir/%name
+%_libdir/%name
+%_libdir/pkgconfig/%name.core.pc
+%_datadir/applications/%name.desktop
+%_datadir/icons/%name.svg

@@ -1,7 +1,7 @@
 Name:		couturier 
 Summary:	Merge PDF in LINUX
 Version:	0.4.1 
-Release:	%mkrel 1
+Release:	%mkrel 2
 Source0:	http://dl.dropbox.com/u/1111373/Couturier/Karmic/%name-%version.tar.gz 
 URL:		http://sites.google.com/site/couturierapp/
 Group:		Office 

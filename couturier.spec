@@ -7,8 +7,7 @@ URL:		http://sites.google.com/site/couturierapp/
 Group:		Office 
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot 
 License:	GPLv3
-BuildRequires:	libmono-devel mono-devel
-BuildRequires:	glade-sharp2
+BuildRequires:	mono-devel
 BuildRequires:	gnome-sharp2-devel
 	
 %description

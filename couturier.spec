@@ -4,7 +4,7 @@ Summary:	Merge PDF in LINUX
 Version:	0.5
 Release:	2
 Source0:	http://dl.dropbox.com/u/1111373/Couturier/Karmic/%name-%version.tar.gz 
-URL:		http://sites.google.com/site/couturierapp/
+URL:		https://sites.google.com/site/couturierapp/
 Group:		Office 
 License:	GPLv3
 BuildRequires:	mono-devel

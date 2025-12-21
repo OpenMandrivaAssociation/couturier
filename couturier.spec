@@ -7,6 +7,11 @@ Source0:	http://dl.dropbox.com/u/1111373/Couturier/Karmic/%name-%version.tar.gz
 URL:		https://sites.google.com/site/couturierapp/
 Group:		Office 
 License:	GPLv3
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	mono-devel
 BuildRequires:	gnome-sharp2-devel
 BuildRequires:	glade-sharp2
